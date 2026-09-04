@@ -1,0 +1,15 @@
+{
+	# Caddy en dev : pas de TLS auto sur localhost, on termine juste le proxy
+	# En prod, remplace :80 par ton domaine (ex: example.com)
+	auto_https off
+	admin off
+}
+
+:8080 {
+	reverse_proxy nginx:8080
+}
+
+:8443 {
+	# Port TLS si tu actives auto_https / certs plus tard
+	reverse_proxy nginx:8080
+}

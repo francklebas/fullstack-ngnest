@@ -1,0 +1,88 @@
+# Monorepo root – backend (NestJS) + frontend (Angular)
+
+# Deps
+**/node_modules/
+# keep lockfiles intentionally – comment to ignore
+# **/package-lock.json
+# **/yarn.lock
+# **/pnpm-lock.yaml
+
+# Build outputs
+**/dist/
+**/build/
+**/out-tsc/
+**/bazel-out/
+frontend/.angular/
+frontend/tmp/
+frontend/out-tsc/
+backend/tsconfig.build.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage / tests
+**/coverage/
+**/.nyc_output/
+__screenshots__/
+
+# Env – keep .env.example, ignore real secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+**/.env
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/.env.local
+
+# Temp
+.temp/
+.tmp/
+.tmp
+.temp
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# IDEs – JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+**/.vscode/
+.history/
+
+# Angular / editors misc
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+typings/
+
+# Docker
+postgres_data/
+.docker/
